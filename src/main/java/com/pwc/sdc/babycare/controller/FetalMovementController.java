@@ -44,7 +44,8 @@ public class FetalMovementController {
 
     @GetMapping("/search")
     public ResponseEntity<List<FetalMovementVo>> search(@RequestParam(value = "startDate", required = false) Date startDate, @RequestParam(value = "endDate", required = false) Date endDate) {
-        return ResponseEntity.ok(fetalMovementService.search(startDate, endDate));
+        List<FetalMovementVo> search = fetalMovementService.search(startDate, endDate);
+        return ResponseEntity.ok(search);
     }
 
     @GetMapping("/today")

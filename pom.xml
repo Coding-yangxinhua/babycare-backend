@@ -111,14 +111,14 @@
 
   <build>
     <defaultGoal>compile</defaultGoal>
-    <finalName>archive-editor-application</finalName>
+    <finalName>babycare-application</finalName>
     <plugins>
       <plugin>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-maven-plugin</artifactId>
         <configuration>
           <fork>true</fork>
-          <mainClass>com.pwc.sdc.babycare.ArchiveEditorApplication</mainClass>
+          <mainClass>com.pwc.sdc.babycare.BabycareApplication</mainClass>
         </configuration>
         <executions>
           <execution>
