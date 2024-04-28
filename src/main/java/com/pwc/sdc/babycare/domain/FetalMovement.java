@@ -1,9 +1,6 @@
 package com.pwc.sdc.babycare.domain;
 
-import com.baomidou.mybatisplus.annotation.FieldFill;
-import com.baomidou.mybatisplus.annotation.TableField;
-import com.baomidou.mybatisplus.annotation.TableId;
-import com.baomidou.mybatisplus.annotation.TableName;
+import com.baomidou.mybatisplus.annotation.*;
 import lombok.Builder;
 import lombok.Data;
 
@@ -52,7 +49,7 @@ public class FetalMovement implements Serializable {
      * 逻辑删除
      */
     @TableField(fill = FieldFill.INSERT)
-
+    @TableLogic
     private Integer deleted;
 
     @TableField(exist = false)

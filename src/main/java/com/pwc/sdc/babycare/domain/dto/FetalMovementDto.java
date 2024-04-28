@@ -8,6 +8,6 @@ import java.util.Date;
 import java.util.List;
 
 @Data
-public class FetalMovementDto extends FetalMovement{
+public class FetalMovementDto extends FetalMovement {
     private List<FetalMovementCount> clickRecords;
 }
